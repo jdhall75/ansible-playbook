@@ -8,5 +8,5 @@
     - name: template the config
       template:
         src: "templates/{{ ansible_network_os }}.j2"
-        dst: "candidate/configs/{{ inventory_hostname }}-confg"
+        dest: "candidate/configs/{{ inventory_hostname }}-confg"
       delegate_to: localhost
